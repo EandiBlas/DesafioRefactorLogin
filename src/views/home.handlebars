@@ -1,0 +1,15 @@
+<div id="contenedor">
+    {{#each listadeproductos}}
+        <div class="card">
+            <img src = "{{thumbnail}}" class="card-img-top imgshop" alt = "{{title}}">
+            <div>
+                <h5 class="card-title mytitulo">{{title}}</h5>
+                <p class="card-text mydescripcion">Categoria: {{category}}</p>
+                <p class="card-text mydescripcion">ID:{{_id}}</p>
+                <p class="card-text mydescripcion">Info: {{description}}</p>
+                <p class="card-text mydescripcion">Price:  ${{price}}</p>
+                <buttton class="btn mx-auto d-block myboton" id="#"><i class="fas fa-cart-plus"></i> Añadir al carrito </button>
+            </div>
+        </div>
+    {{/each}}
+</div>
